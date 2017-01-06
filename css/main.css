@@ -5823,6 +5823,9 @@ header {
   padding-top: 4%;
   padding-bottom: 4%; }
 
+.arrow {
+  width: 10%; }
+
 .nuestra {
   background-image: url("../img/parallax-3.png"); }
 
