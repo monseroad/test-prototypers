@@ -1,13 +1,27 @@
 //VARIABLES
-/* colores */
 $blanco: #F4F2F2;
 $rosado: #ED9EA3;
+$gris: #3B3B3B;
+$gris-claro: #616161;
+$font: 'Raleway', sans-serif;
 
-//MEDIDAS DE LOS BACKGROUND-IMAGE
-.fondo{
+
+//MEDIDAS Y VALORES PARA ELEMENTOS QUE SE REPITEN
+.fondo{  //Imagenes de background
 	background-size: 100%;
 	background-repeat: no-repeat;
 	padding-top: 3%;
+}
+.logo{ //logo "tealeaf"
+	margin-top: -2%;
+	margin-left: 5%;
+}
+
+p, 
+h1, 
+h2, 
+h3{
+	font-family: $font;
 }
 
 //HEADER
@@ -19,13 +33,14 @@ header{
 	height: 350px;
 }
 .scroll{
-	height: 145px;
+	height: 110px;
 	padding-top: 4%;
-	padding-bottom: 4%;
+
 }
 .arrow{
-
-    width: 10%;
+    margin-left: 49.3%;
+    padding-top: 3%;
+    padding-bottom: 8%;
 }
 
 //VIDEO
@@ -63,7 +78,69 @@ h2{
 	margin-bottom: 5%;
 }
 
-//SECCION 3
+//SECCIÓN 3
+.foto1{
+	position: relative;
+}
+.foto2{
+    margin-left: -9.5%;
+  
+}
+
+.foto3{
+    margin-left: -9%;
+  
+}
+
+.foto4{
+	width: 100%;
+    height: 299px;
+    margin-left: -2.3%;
+  
+}
+.foto1, .foto4{
+	width: 100%;
+}
+.foto2, .foto3{
+	width: 110%;
+}
+.foto1, .foto2, .foto3, .foto4{
+	z-index: 1;
+}
+/*-- textos --*/
+/*.texto1{
+	margin-top: -60%;
+	margin-left: 25%;
+	position: relative;
+}
+.texto2{
+	margin-top: -60%;
+	margin-left: 10%;
+	position: relative;
+}
+.texto3{
+	margin-top: -60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: relative;
+}
+.texto4{
+	//margin-top: -50%;
+	position: relative;
+}
+.texto1, .texto2, .texto3, .texto4{
+	z-index: 2;
+	color: $blanco;
+	font-weight: bold;
+}*/
+
+//SECCION 4
+.position{
+	position: absolute;
+}
+.relative{
+	position: relative;
+}
 .preguntas{
 	@extend .fondo;
     background-image: url("../img/parallax-2.png");
@@ -74,7 +151,7 @@ h2{
 	padding-bottom: 30%;
 }
 
-//SECCION 4
+//SECCION 5
 .medidas-fotos{
 	padding-left: 12%;
 	padding-top: 5%;
@@ -107,5 +184,38 @@ h2{
 	padding-bottom: 25%;
 }
 
+//SECCION 7
+.slides-padding{
+	padding-left: 1.1%;
+}
 
+//SECCION 8
+.amamos{
+	font-weight: bold;
+}
+hr{
+	background-color: #000;
+	width: 13%;
+	height: 4px;
+	border-style: 2px solid black;
+	margin-left: -0.5%;
+}
+.top{
+    padding-top: 12%;
+}
 
+//FOOTER
+footer{
+	background-color: $gris;
+}
+.logo-footer{
+	margin-top: 4%;
+	margin-left: 20%;
+	margin-bottom: 4%;
+}
+
+.gris-claro{
+	color: $gris-claro;
+	font-weight: bold;
+	margin-top: 7%;
+}
