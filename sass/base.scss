@@ -1,4 +1,6 @@
 //VARIABLES
+$beige: #F0E7AE;
+$verde: #8EC245;
 $blanco: #F4F2F2;
 $rosado: #ED9EA3;
 $gris: #3B3B3B;
@@ -16,13 +18,30 @@ $font: 'Raleway', sans-serif;
 	margin-top: -2%;
 	margin-left: 5%;
 }
-
 p, 
 h1, 
 h2, 
 h3{
 	font-family: $font;
 }
+
+//DIVS RESPONSIVE
+.div-height{
+	height: 100px;
+}
+.div1-responsive{
+	@extend .div-height;
+	background-color: $verde;
+}
+.div2-responsive{
+	@extend .div-height;
+	background-color: $beige;
+}
+.div3-responsive{
+	@extend .div-height;
+	background-color: $rosado;
+}
+
 
 //HEADER
 header{
@@ -31,19 +50,20 @@ header{
 }
 .logo-animado{
 	height: 350px;
+	padding-bottom: 5%;
 }
 .scroll{
 	height: 110px;
 	padding-top: 4%;
-
 }
 .arrow{
     margin-left: 49.3%;
     padding-top: 3%;
-    padding-bottom: 8%;
+    padding-bottom: 3%;
 }
 
 //VIDEO
+
 
 //SECCION 1
 .nuestra{
@@ -77,6 +97,10 @@ h2{
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+.margen-texto{
+	padding-left: 4%;
+	padding-right: 4%;
+}
 
 //SECCIÓN 3
 .foto1{
@@ -107,32 +131,6 @@ h2{
 .foto1, .foto2, .foto3, .foto4{
 	z-index: 1;
 }
-/*-- textos --*/
-/*.texto1{
-	margin-top: -60%;
-	margin-left: 25%;
-	position: relative;
-}
-.texto2{
-	margin-top: -60%;
-	margin-left: 10%;
-	position: relative;
-}
-.texto3{
-	margin-top: -60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	position: relative;
-}
-.texto4{
-	//margin-top: -50%;
-	position: relative;
-}
-.texto1, .texto2, .texto3, .texto4{
-	z-index: 2;
-	color: $blanco;
-	font-weight: bold;
-}*/
 
 //SECCION 4
 .position{
@@ -157,22 +155,30 @@ h2{
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
+
 .icon1{
 	@extend .medidas-fotos;
-	background-color: #F0E7AE;
+	background-color: $beige;
 }
 .icon2{
 	@extend .medidas-fotos;
-	background-color: #8EC245;
+	background-color: $verde;
 }
 .icon3{
 	@extend .medidas-fotos;
-	background-color: #ED9EA3;
+	background-color: $rosado;
 }
 .texto{
 	padding-top: 7%;
 	padding-right: 25%;
 	padding-left: 25%;
+}
+.parrafo{
+	@extend .texto;
+	padding-bottom: 10%;
+}
+.lista{
+	padding-bottom: 10%;
 }
 
 //SECCION 6
@@ -184,7 +190,7 @@ h2{
 	padding-bottom: 25%;
 }
 
-//SECCION 7
+//SECCION 7 (SLIDES)
 .slides-padding{
 	padding-left: 1.1%;
 }
@@ -202,6 +208,9 @@ hr{
 }
 .top{
     padding-top: 12%;
+}
+.flechas{
+	text-decoration: none;
 }
 
 //FOOTER

@@ -5821,11 +5821,24 @@ h2,
 h3 {
   font-family: "Raleway", sans-serif; }
 
+.div-height, .div1-responsive, .div2-responsive, .div3-responsive {
+  height: 100px; }
+
+.div1-responsive {
+  background-color: #8EC245; }
+
+.div2-responsive {
+  background-color: #F0E7AE; }
+
+.div3-responsive {
+  background-color: #ED9EA3; }
+
 header {
   background-image: url("../img/parallax-1.png"); }
 
 .logo-animado {
-  height: 350px; }
+  height: 350px;
+  padding-bottom: 5%; }
 
 .scroll {
   height: 110px;
@@ -5834,7 +5847,7 @@ header {
 .arrow {
   margin-left: 49.3%;
   padding-top: 3%;
-  padding-bottom: 8%; }
+  padding-bottom: 3%; }
 
 .nuestra {
   background-image: url("../img/parallax-3.png"); }
@@ -5864,6 +5877,10 @@ h2 {
   margin-top: 5%;
   margin-bottom: 5%; }
 
+.margen-texto {
+  padding-left: 4%;
+  padding-right: 4%; }
+
 .foto1 {
   position: relative; }
 
@@ -5887,32 +5904,6 @@ h2 {
 .foto1, .foto2, .foto3, .foto4 {
   z-index: 1; }
 
-/*-- textos --*/
-/*.texto1{
-	margin-top: -60%;
-	margin-left: 25%;
-	position: relative;
-}
-.texto2{
-	margin-top: -60%;
-	margin-left: 10%;
-	position: relative;
-}
-.texto3{
-	margin-top: -60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	position: relative;
-}
-.texto4{
-	//margin-top: -50%;
-	position: relative;
-}
-.texto1, .texto2, .texto3, .texto4{
-	z-index: 2;
-	color: $blanco;
-	font-weight: bold;
-}*/
 .position {
   position: absolute; }
 
@@ -5941,10 +5932,16 @@ h2 {
 .icon3 {
   background-color: #ED9EA3; }
 
-.texto {
+.texto, .parrafo {
   padding-top: 7%;
   padding-right: 25%;
   padding-left: 25%; }
+
+.parrafo {
+  padding-bottom: 10%; }
+
+.lista {
+  padding-bottom: 10%; }
 
 .campos {
   background-image: url("../img/parallax-4.png"); }
@@ -5967,6 +5964,9 @@ hr {
 
 .top {
   padding-top: 12%; }
+
+.flechas {
+  text-decoration: none; }
 
 footer {
   background-color: #3B3B3B; }

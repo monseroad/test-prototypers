@@ -23,15 +23,15 @@ $(document).ready(function(){
     moveY   : '250px',
 
   });  
-});
-
 
 //SMOOVE SECCION 5
 $(".foo, .bar").smoove({
-    skew  : '15%',
+    skew  : '50%',
     moveX   : '100px',
     moveY   : '100px',
-  }); 
+   }); 
+});
+
 
 //SLIDE
 $(function() {
@@ -39,4 +39,11 @@ $(function() {
         hashchange: true
       });
     });
+
+//FOTOS
+$(document).ready(function(){
+	$("#opacidad").click(function(e){				
+		//Código de cambio de opacidad		
+	});	
+});
 
