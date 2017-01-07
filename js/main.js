@@ -17,20 +17,15 @@ $(document).ready(function(){
 
   });  
 
-  $(".foto-tres").smoove({ //FOTO 3
-    offset  : '10%',
-    moveX   : '50px',
-    moveY   : '250px',
-
-  });  
-
 //SMOOVE SECCION 5
-$(".foo, .bar").smoove({
-    skew  : '50%',
-    moveX   : '100px',
-    moveY   : '100px',
+$(".skew, .bar").smoove({
+    skew : '1%',
+    moveX   : '2px',
+    moveY   : '3px',
+    moveZ   : '0.5',
    }); 
-});
+ });
+
 
 
 //SLIDE
